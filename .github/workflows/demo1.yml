@@ -3,6 +3,11 @@ on:
   pull_request:
     types: [opened, edited, closed]
   workflow_dispatch:
+  push:
+    branches:
+      - main
+      - 'dev-*' # works for dev-new, dev-old-stuff, etc
+      - 'feat/**' # works for branches with extra slashes in them
 jobs:
   deploy:
     runs-on: ubuntu-latest
