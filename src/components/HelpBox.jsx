@@ -17,3 +17,11 @@ HelpBox.propTypes = {
 };
 
 export default HelpBox;
+
+//! Adding comments to be ignored by GitHub Actions
+
+// TODO: fix this
+
+// FIX: delete comments
+
+//? Uses [skip actions] in commit message to skip actions of push and pull request triggers
